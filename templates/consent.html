@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!-- 
+  The consent.html displays the text of your IRB-approved
+  consent form.  Even if you are not required to provide
+  a consent form, it is helpful to use this form to 
+  describe what people can do if an error comes up, etc...
+
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Psychology Experiment - Informed Consent Form</title>
+        <link rel="stylesheet" href="/static/css/bootstrap.min.css" type="text/css" />
+        <link rel="stylesheet" href="/static/css/style.css" type="text/css" />
+        <script type="text/javascript">
+            function onexit() {
+              self.close(); // no harm, no foul here
+            }
+        </script>
+    </head>
+    <body>
+        <div id="container-consent">
+            <div id="consent">
+                <h1>We need your consent to proceed</h1>
+                <hr />
+                <div class="legal well">
+                    <p style="color:red; font-weight:bold">
+                    Please consider this information carefully before deciding whether to participate in this research.
+                    </p>
+                    <p>
+                    <u>Purpose of research:</u> This research study is being conducted to collect data on XXX.
+                    </p>
+                    <p>
+                    <u>What you will do in this study:</u> If you decide to participate, you will first be asked to complete a brief demographic questionnaire, after which you will be presented with either text or narrated audio describing a scenario, or a brief video showing the scenario. You will then be asked to answer questions about the scenario. In order to progress through the study and receive your compensation code, you will be required to answer every question unless stated otherwise.
+                    </p>
+                    <p>
+                    <u>Time required:</u> The session will take approximately XX to XX minutes to complete.
+                    </p>
+                    <p>
+                    <u>Risks and discomfort:</u> There are no forseeable risks with this study.
+                    </p>
+                    <p>
+                    <u>Benefits:</u> There are no direct personal benefits.
+                    </p>
+                    <p>
+                    <u>Compensation:</u> You will receive $X.XX for completion of this study.
+                    </p>
+                    <p>
+                    <u>Confidentiality:</u> Your responses will be recorded but linked neither to personally identifiable nor worker information. The information will be kept strictly confidential and used only for research purposes. The documentation will be identifiable only by a randomly assigned ID number. All information will be kept on a secure web server.
+                    </p>
+                    <p>
+                    <u>Participation and Withdrawal:</u> Your participation is <u>completely voluntary and there are no penalties if you decide not to participate</u>. Should you decide at any time you no longer wish to participate you may discontinue your participation without penalty.
+                    </p>
+                    <p>
+                    <u>To contact the researcher:</u> If you have questions or concerns about this research please contact XXX.
+                    </p>
+                    <p>
+                    <u>Whom to contact about your rights in this research:</u> For questions, concerns, suggestions, or complaints that are not being addressed by the researcher, or research-related harm: XXX.
+                    </p>
+                    <p>
+                    By accepting this HIT, you confirm that you understand the above material, that you are willing to participate in this experiment, and that you allow us to use your data for scientific purposes, and may be published or otherwise shared with other researchers. No identifying information will ever be shared. 
+                    </p>
+                    <button type="button" class="btn btn-default btn-sm" onClick="window.print();">
+                    <span class="glyphicon glyphicon-print"></span> Print a copy of this
+                    </button>
+                </div>
+
+                <hr />
+                <h4>Do you understand and consent to these terms?</h4>
+                <br />
+
+                <center>
+                    <button type="button" class="btn btn-primary btn-lg" onClick="window.location='/exp?hitId={{ hitid }}&assignmentId={{ assignmentid }}&workerId={{ workerid }}'">
+                    <span class="glyphicon glyphicon-ok"></span> I agree 
+                    </button>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="btn btn-danger btn-lg" onClick="onexit()">
+                    <span class="glyphicon glyphicon-ban-circle"></span> No thanks, I do not want to do this HIT
+                    </button>
+                </center>
+
+            </div>
+        </div>
+    </body>
+</html>
+
