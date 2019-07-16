@@ -1,8 +1,9 @@
-=== Obtaining Data ===
+Obtaining Data
+--------------
 
 Psiturk provides a simple command for retrieving datasets using the <code>download datafiles</code> command in the Psiturk command-line. This creates three CSV files for event data, trial data, and question data. However, for our purposes in the HRI Lab, the formatting of these csv files may be a little difficult. Therefore, a simple CSV parser is provided below. You may modify it to fit the needs of your project database.
 
-<pre>
+```python
 # Simple Python script to create a plot of the results from the experiment 
 from sqlalchemy import create_engine, MetaData, Table
 import json
@@ -87,4 +88,4 @@ with open('csvfile.csv','wb') as file:
 	for line in output:
 		file.write(line)
 		file.write('\n')
-</pre>
+```
