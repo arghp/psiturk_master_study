@@ -1,7 +1,7 @@
 psiturk_master_study
 --------------------
 
-psiturk_master_study is a template study made using [I'm an inline-style link with title](https://psiturk.org/ "psiTurk").
+psiturk_master_study is a template study made using [psiturk](https://psiturk.org/ "psiTurk").
 It contains a number of different interactive pages that can be modified to suit the needs of the experiment. Please follow the comments in the files for more information.
 
 Obtaining Data
